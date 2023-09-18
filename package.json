@@ -1,0 +1,32 @@
+{
+  "name": "leovegas_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": [
+      "cypress/e2e/**/*.js",
+      "cypress/support/common/**/*.js"
+    ],
+    "html": {
+      "enabled": true
+    },
+    "filterSpecs": true,
+    "omitFiltered": true
+  },
+  "author": "Fabio",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.14.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^17.2.1",
+    "@cypress/browserify-preprocessor": "^3.0.2"
+  }
+}
